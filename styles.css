@@ -1,0 +1,181 @@
+:root {
+    --main-red: #ed1c24;
+    --main-white: #fff;
+    --main-gray: #f7f7f7;
+    --main-dark: #222;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--main-gray);
+    color: var(--main-dark);
+}
+
+header {
+    background: var(--main-red);
+    color: var(--main-white);
+    display: flex;
+    align-items: center;
+    padding: 20px 5vw;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 30px;
+    background: var(--main-white);
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.header-info h1 {
+    font-size: 2.2rem;
+    margin: 0 0 5px 0;
+}
+.header-info .slogan {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0 0 8px 0;
+    letter-spacing: 1px;
+}
+.header-info .contact {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+nav {
+    background: var(--main-white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}nav a {
+    color: var(--main-red);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}nav a:hover {
+    background: var(--main-red);
+    color: var(--main-white);
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto 30px auto;
+    padding: 0 2vw;
+    background: var(--main-white);
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+section {
+    margin: 40px 0;
+}
+
+h2 {
+    color: var(--main-red);
+    margin-top: 0;
+}
+
+ul, .training-list {
+    padding-left: 20px;
+}
+.training-list li {
+    line-height: 2;
+    font-size: 1.1rem;
+}
+.signup-options {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.signup-options div {
+    background: var(--main-gray);
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 220px;
+    text-align: center;
+}
+.signup-options h3 {
+    margin-top: 0;
+}
+.signup-options button {
+    background: var(--main-red);
+    color: var(--main-white);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background 0.2s;
+}
+.signup-options button:hover {
+    background: #c41017;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+th, td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+th {
+    background: #f2f2f2;
+}
+
+.note {
+    font-size: 0.98rem;
+    color: #777;
+    margin-top: 7px;
+}
+
+footer {
+    background: var(--main-red);
+    color: var(--main-white);
+    text-align: center;
+    padding: 18px 0 12px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-logo {
+    width: 48px;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 2vw;
+    }
+    .logo {
+        margin-bottom: 14px;
+        margin-right: 0;
+    }
+    main {
+        padding: 0 1vw;
+    }
+    .signup-options {
+        flex-direction: column;
+        gap: 18px;
+    }
+    nav {
+        gap: 10px;
+    }
+}
